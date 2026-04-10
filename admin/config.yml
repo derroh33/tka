@@ -1,6 +1,5 @@
 backend:
   name: git-gateway
-  repo: derroh33/tka
   branch: main
 
 media_folder: "wp-content/uploads"
@@ -18,10 +17,16 @@ collections:
       - { label: "Price", name: "price", widget: "string" }
       - { label: "Description", name: "body", widget: "markdown" }
 
-  - name: "gallery"
-    label: "Gallery"
-    folder: "gallery"
-    create: true
-    fields:
-      - { label: "Image", name: "image", widget: "image" }
-      - { label: "Caption", name: "caption", widget: "string" }
+  - name: "gallery_data"
+    label: "Gallery Images"
+    files:
+      - name: "gallery"
+        label: "Gallery"
+        file: "gallery-data.json"
+        fields:
+          - label: "Images"
+            name: "images"
+            widget: "list"
+            fields:
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Caption", name: "caption", widget: "string", required: false }

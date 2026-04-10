@@ -1,0 +1,12 @@
+{
+  "images": [
+    {
+      "image": "/wp-content/uploads/sample1.jpg",
+      "caption": "Safari in the Maasai Mara"
+    },
+    {
+      "image": "/wp-content/uploads/sample2.jpg",
+      "caption": "Mount Kenya at sunrise"
+    }
+  ]
+}
